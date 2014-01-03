@@ -17,7 +17,7 @@ class UrlAdmin(admin.ModelAdmin):
         }),
         ('Advanced options',{
             'classes': ('collapse',),
-            'fields':('private','private_password')
+            'fields':('personal','personal_slug','private','private_password')
         })
         )
     actions = ['ban_this_link','active_this_link','refuse_this_link','pending_this_link']
